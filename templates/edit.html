@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Edit Student</title>
+</head>
+<body>
+<h2>Edit Student</h2>
+<form action="/update/{{ row.id }}" method="POST">
+Name:
+<input type="text" name="nm" value="{{ row.name }}"><br><br>
+Address:
+<input type="text" name="add" value="{{ row.addr }}"><br><br>
+City:
+<input type="text" name="city" value="{{ row.city }}"><br><br>
+Pin:
+<input type="text" name="pin" value="{{ row.pin }}"><br><br>
+<input type="submit" value="Update Student">
+
+</form>
+
+</body>
+
+</html>
