@@ -1,8 +1,29 @@
 <!DOCTYPE html>
 <html>
-    <body>
-        <h2>Menu</h2>
-        <h3><a href = "/enternew">Add New Record </a></h3>
-        <h3><a href = "/list">Show List</a></h3>
-    </body>
+<head>
+<title>Student Management System</title>
+<link rel="stylesheet"
+href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<div class="navbar">
+<a href="/">Home</a>
+<a href="/enternew">Add Student</a>
+<a href="/list">Student List</a>
+</div>
+<div class="container">
+<div class="card">
+<h1>Student Management System</h1>
+<p>Welcome to Student Management System.</p>
+<p>Select an option below.</p>
+<br>
+<a href="/enternew">
+<input type="submit" value="Add Student">
+</a>
+<a href="/list">
+<input type="submit" value="View Students">
+</a>
+</div>
+</div>
+</body>
 </html>
