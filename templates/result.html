@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Result</title>
+<link rel="stylesheet"
+href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<div class="navbar">
+<a href="/">Home</a>
+<a href="/enternew">Add Student</a>
+<a href="/list">Student List</a>
+</div>
+<div class="container">
+<div class="card">
+<p class="success">{{ msg }}</p>
+<br>
+<a href="/enternew">
+<input type="submit" value="Add Another Student">
+</a>
+<a href="/list">
+<input type="submit" value="View Students">
+</a>
+</div>
+</div>
+</body>
+</html>
